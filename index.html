@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>tests</title>
+</head>
+
+
+<body>
+  <header>
+    <div class="header container">
+        <div class="header__empty mobile">
+        </div>
+        <a href="/" class="header__logo desctop">
+            <img src="img/Header/Logo.svg" alt="">
+        </a>
+        <div class="header__row">
+            <form action="" class="desctop">
+                <input  type="text" name="" id="" placeholder="Поиск">
+                <button>
+                    <img src="img/Header/search.svg" alt="">    
+                </button>
+            </form>
+            <div class="header__info">
+                <a href="">
+                    <img src="img/Header/Avatar.png" alt="">
+                </a>
+                <div class="header__name desctop">
+                    Максим Галактионов    
+                </div>
+                <div class="header__setting">
+                    <img src="img/Header/settings.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+  <main>
+    <div class="main-row container">
+      <section class="side-menu " data-da=".header__empty, 767.99">
+   <a href="">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 22C3.34315 22 2 20.6569 2 19V5C2 3.34315 3.34315 2 5 2H19C20.6569 2 22 3.34315 22 5V19C22 20.6569 20.6569 22 19 22H5ZM4 5C4 4.44772 4.44772 4 5 4H8V20H5C4.44772 20 4 19.5523 4 19V5ZM10 20V4H19C19.5523 4 20 4.44772 20 5V19C20 19.5523 19.5523 20 19 20H10Z" fill="#005999"/>
+        </svg>
+   </a>
+   <a href="" class="desctop">
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 0C11.3806 0 11.7282 0.216072 11.8967 0.557376L14.7543 6.34647L21.1446 7.28051C21.5212 7.33555 21.8339 7.59956 21.9512 7.96157C22.0686 8.32357 21.9703 8.72083 21.6977 8.98636L17.0745 13.4894L18.1656 19.851C18.23 20.2261 18.0757 20.6053 17.7677 20.8291C17.4598 21.0528 17.0515 21.0823 16.7145 20.9051L11 17.8998L5.28545 20.9051C4.94853 21.0823 4.54024 21.0528 4.23226 20.8291C3.92429 20.6053 3.77004 20.2261 3.83439 19.851L4.92548 13.4894L0.302266 8.98636C0.0296477 8.72083 -0.0686252 8.32357 0.0487525 7.96157C0.16613 7.59956 0.47881 7.33555 0.85537 7.28051L7.24574 6.34647L10.1033 0.557376C10.2718 0.216072 10.6194 0 11 0ZM11 3.25925L8.80671 7.70262C8.66117 7.99747 8.37998 8.20193 8.05463 8.24949L3.14841 8.9666L6.69773 12.4236C6.93361 12.6534 7.04127 12.9845 6.98561 13.309L6.14818 18.1917L10.5345 15.8849C10.8259 15.7317 11.1741 15.7317 11.4655 15.8849L15.8518 18.1917L15.0144 13.309C14.9587 12.9845 15.0664 12.6534 15.3023 12.4236L18.8516 8.9666L13.9454 8.24949C13.62 8.20193 13.3388 7.99747 13.1933 7.70262L11 3.25925Z" fill="#2E3238"/>
+        </svg>
+        
+   </a>
+</section>
+      <div class="main-row__content">
+        <section class="filter">
+    <div class="filter__head">
+        <form action="">
+            <input type="text" name="" id="searchInput" placeholder="Поиск по меню">
+            <button id="searchButton">
+                <img src="img/Header/filter.svg" alt="">    
+            </button>
+        </form>
+        <div class="filter__none" id="noResults">
+            <img src="img/Header/no-filter.svg" alt="">
+        </div>
+    </div>
+    <div class="filter__content" id="filterContent">
+        <div class="filter__item">
+            <div class="img">
+                <img src="img/Header/arrow.svg" alt="">
+            </div>
+            <div class="filter__text">
+                Моя работа
+            </div>
+        </div>
+        <div class="filter__item">
+            <div class="img">
+                <img src="img/Header/arrow.svg" alt="">
+            </div>
+            <div class="filter__text">
+                Структура портала
+            </div>
+        </div>
+        <div class="filter__item">
+            <div class="img">
+                <img src="img/Header/arrow.svg" alt="">
+            </div>
+            <div class="filter__text">
+                Отсутствие на рабочем месте
+            </div>
+        </div>
+        <div class="filter__item">
+            <div class="img">
+                <img src="img/Header/arrow.svg" alt="">
+            </div>
+            <div class="filter__text">
+                Портфель услуг
+            </div>
+        </div>
+        <div class="filter__item">
+            <div class="img">
+                <img src="img/Header/arrow.svg" alt="">
+            </div>
+            <div class="filter__text">
+                Дашборды
+            </div>
+        </div>
+        <div class="filter__item">
+            <div class="img">
+                <img src="img/Header/arrow.svg" alt="">
+            </div>
+            <div class="filter__text">
+                Доски задач
+            </div>
+        </div>
+        <div class="filter__item">
+            <div class="img">
+                <img src="img/Header/arrow.svg" alt="">
+            </div>
+            <div class="filter__text">
+                Обращения
+            </div>
+        </div>
+        <div class="filter__item">
+            <div class="img">
+                <img src="img/Header/arrow.svg" alt="">
+            </div>
+            <div class="filter__text">
+                События
+            </div>
+        </div>
+        <div class="filter__item">
+            <div class="img">
+                <img src="img/Header/arrow.svg" alt="">
+            </div>
+            <div class="filter__text">
+                Инциденты
+            </div>
+        </div>
+        <div class="filter__item">
+            <div class="img">
+                <img src="img/Header/arrow.svg" alt="">
+            </div>
+            <div class="filter__text">
+                Проблемы
+            </div>
+        </div>
+        <div class="filter__item">
+            <div class="img">
+                <img src="img/Header/arrow.svg" alt="">
+            </div>
+            <div class="filter__text">
+                Настройка каталогов
+
+            </div>
+        </div>
+        <div class="filter__item">
+            <div class="img">
+                <img src="img/Header/arrow.svg" alt="">
+            </div>
+            <div class="filter__text">
+                Запросы на обслуживание
+            </div>
+        </div>
+        <div class="filter__item">
+            <div class="img">
+                <img src="img/Header/arrow.svg" alt="">
+            </div>
+            <div class="filter__text">
+                Запросы на изменение
+            </div>
+        </div>
+        <div class="filter__item">
+            <div class="img">
+                <img src="img/Header/arrow.svg" alt="">
+            </div>
+            <div class="filter__text">
+                Управление конфигурациями
+            </div>
+        </div>
+        <div class="filter__item">
+            <div class="img">
+                <img src="img/Header/arrow.svg" alt="">
+            </div>
+            <div class="filter__text">
+                Управление уровнем услуг
+            </div>
+        </div>
+        <div class="filter__item">
+            <div class="img">
+                <img src="img/Header/arrow.svg" alt="">
+            </div>
+            <div class="filter__text">
+                Настройка соответствий
+            </div>
+        </div>
+    </div>
+</section>
+        <form class="wrapper">
+    <div class="wrapper__head">
+        <div class="computed">
+            <div class="name">
+                Подзадача
+            </div>
+            <div class="create open-modal" data-name="test">
+                Создать
+            </div>
+        </div>
+        <div class="buttons desctop">
+            <button type="submit" class="open-modal">
+                Сохранить
+            </button>
+            <button type="submit" class="exit">
+                Сохранить и выйти
+            </button>
+        </div>
+    </div>
+    <div class="wrapper__content">
+        <h1>
+            STSK0004783 На инциденте, запросе, проблеме, в статусе закрыто некоторые поля остаются редактируемыми для
+            агента если он Caller
+        </h1>
+        <div class="wrapper__inputs">
+            <div class="column">
+                <label for="" class="label">
+                    <div class="label__name">
+                        <img src="img/Header/star-min.svg" alt="">
+                        Тема
+
+                    </div>
+                    <div class="label__row">
+                        <input type="text">
+                    </div>
+                </label>
+                <label for="" class="label">
+                    <div class="label__name">
+                        Описание
+                    </div>
+                    <div class="label__row">
+                        <input type="text">
+                    </div>
+                </label>
+                <label for="" class="label">
+                    <div class="label__name">
+                        <img src="img/Header/star-min.svg" alt="">
+                        Рабочие заметки
+
+                    </div>
+                    <div class="label__row">
+                        <input type="text">
+                    </div>
+                </label>
+                <div for="" class="label">
+                    <div class="label__name">
+                        <img src="img/Header/star-min.svg" alt="">
+                        Ответственный
+
+                    </div>
+                    <div class="label__row">
+                        <div class="label__tags">
+                            <div class="tag">
+                                <div class="tag__name">
+                                    Константин Константинопольский
+                                </div>
+                              
+                            </div>
+                            <div class="close">
+                                <img src="img/Header/close-min.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="img/Header/plus.svg" alt="">
+                        </div>
+                        <div class="image">
+                            <img src="img/Header/lupe-min.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <label for="" class="label">
+                    <div class="label__name">
+                        Описание
+                    </div>
+                    <div class="label__row">
+                        <input type="text" placeholder="Новая">
+                    </div>
+                </label>
+                <label for="" class="label">
+                    <div class="label__name">
+                        Продукт
+                    </div>
+                    <div class="label__row">
+                        <input type="text" placeholder="">
+                        <div class="image">
+                            <img src="img/Header/lupe-min.svg" alt="">
+                        </div>
+                    </div>
+                </label>
+                <label for="" class="label">
+                    <div class="label__name">
+                        Приоритет
+                    </div>
+                    <div class="label__row">
+                        <input type="text" placeholder="Новая">
+                    </div>
+                </label>
+                <div for="" class="label">
+                    <div class="label__name">
+                        <img src="img/Header/star-min.svg" alt="">
+                        Группа
+
+                    </div>
+                    <div class="label__row">
+                        <div class="label__tags">
+                            <div class="tag">
+                                <div class="tag__name">
+                                    
+                                Support Group
+                                </div>
+                            </div>
+                            <div class="close">
+                                <img src="img/Header/close-min.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="img/Header/plus.svg" alt="">
+                        </div>
+                        <div class="image">
+                            <img src="img/Header/lupe-min.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment">
+            <label for="" class="label">
+                <div class="label__name">
+                    Согласующие
+
+                </div>
+                <div class="label__row">
+                    <input type="text">
+                </div>
+            </label>
+        </div>
+        <div class="concordants">
+            <div for="" class="label">
+                <div class="label__name">
+                    <img src="img/Header/star-min.svg" alt="">
+                    Согласующие
+
+                </div>
+                <div class="label__row">
+                    <div class="label__tags">
+                        <div class="tag">
+                          
+                            <div class="tag__name">
+                                Андрей Пивоваров
+                            </div>
+                            <div class="tag__close">
+                                <img src="img/Header/close.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="tag">
+                           
+                            <div class="tag__name">
+                                Максим Галактионов
+                            </div>
+                            <div class="tag__close">
+                                <img src="img/Header/close.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="tag">
+                            <div class="tag__name">
+                                
+                            Алла Лин
+                            </div>
+                            <div class="tag__close">
+                                <img src="img/Header/close.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="tag">
+                            <div class="tag__name">
+                                
+                            Константин Константинопольский Константинович
+                            </div>
+                            <div class="tag__close">
+                                <img src="img/Header/close.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="tag">
+                            <div class="tag__name">
+                                
+                            Игорь Иванченко
+                            </div>
+                            <div class="tag__close">
+                                <img src="img/Header/close.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="tag">
+                            <div class="tag__name">
+                                
+                            Юлия Эйчаровна
+                            </div>
+                            <div class="tag__close">
+                                <img src="img/Header/close.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="tag">
+                            <div class="tag__name">
+                                Артём Подпрыгайко-Саппортов
+                            </div>
+                          
+                            <div class="tag__close">
+                                <img src="img/Header/close.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="tag">
+                            <div class="tag__name">
+                                
+                            Илья Вазнец
+                            </div>
+                            <div class="tag__close">
+                                <img src="img/Header/close.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="tag">
+                            <div class="tag__name">   Михаил Вортенов</div>
+                            <div class="tag__close">
+                                <img src="img/Header/close.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="tag">
+                            <div class="tag__name">
+                                
+                            Наталья Нашевна
+                            </div>
+                            <div class="tag__close">
+                                <img src="img/Header/close.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="tag">
+                            Евгения Итамовна
+                            <div class="tag__close">
+                                <img src="img/Header/close.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="tag">
+                            <div class="tag__name">
+                                
+                            Алиса Киральчук
+                            </div>
+                            <div class="tag__close">
+                                <img src="img/Header/close.svg" alt="">
+                            </div>
+                        </div>
+                    
+                        <div class="close">
+                            <img src="img/Header/close-min.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="img/Header/plus.svg" alt="">
+                    </div>
+                    <div class="image">
+                        <img src="img/Header/lupe-min.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper__inputs">
+            <div class="column">
+                <label for="" class="label">
+                    <div class="label__name">
+                        Когда открыто
+                    </div>
+                    <div class="label__row">
+                        <input type="text" placeholder="">
+                        <div class="image">
+                            <img src="img/Header/date.svg" alt="">
+                        </div>
+                    </div>
+                </label>
+                <div for="" class="label">
+                    <div class="label__name">
+                        Кем открыто
+
+                    </div>
+                    <div class="label__row">
+                        <div class="label__tags">
+                            <div class="tag">
+                                <div class="tag__name">
+                                    
+                                Андрей Пивоваров
+                                </div>
+                            </div>
+                            <div class="close">
+                                <img src="img/Header/close-min.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="img/Header/plus.svg" alt="">
+                        </div>
+                        <div class="image">
+                            <img src="img/Header/lupe-min.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <label for="" class="label">
+                    <div class="label__name">
+                        Когда открыто
+                    </div>
+                    <div class="label__row">
+                        <input type="text" placeholder="22.10.2024">
+                        <div class="image">
+                            <img src="img/Header/date.svg" alt="">
+                        </div>
+                    </div>
+                </label>
+                <div for="" class="label">
+                    <div class="label__name">
+                        Кем создано
+                    </div>
+                    <div class="label__row">
+                        <div class="label__tags">
+                            <div class="tag">
+                                <div class="tag__name">
+                                    Андрей Пивоваров
+                                </div>
+                             
+                            </div>
+                            <div class="close">
+                                <img src="img/Header/close-min.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="img/Header/plus.svg" alt="">
+                        </div>
+                        <div class="image">
+                            <img src="img/Header/lupe-min.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+      </div>
+    </div>
+  </main>
+  <div class="modal modal-content--test fadeOut none">
+    <form action="" class="modal__content wrapper">
+        <div class="wrapper__head">
+            <div class="computed">
+                <div class="name">
+                    Подзадача
+                </div>
+            </div>
+            <div class="buttons desctop">
+                <button type="submit" class="open-modal">
+                    Сохранить
+                </button>
+                <button type="submit" class="exit">
+                    Отменить
+                </button>
+            </div>
+            <div class="modal-close mobile">
+                <img src="img/Header/close-x.svg" alt="">
+            </div>
+        </div>
+        <div class="wrapper__content">
+            <h1>
+                Новая запись
+            </h1>
+            <div class="wrapper__inputs">
+                <div class="column">
+                    <label for="" class="label">
+                        <div class="label__name">
+                            <img src="img/Header/star-min.svg" alt="">
+                            Тема
+    
+                        </div>
+                        <div class="label__row">
+                            <input type="text">
+                        </div>
+                    </label>
+                    <label for="" class="label">
+                        <div class="label__name">
+                            Описание
+                        </div>
+                        <div class="label__row">
+                            <input type="text">
+                        </div>
+                    </label>
+                    <label for="" class="label">
+                        <div class="label__name">
+                            <img src="img/Header/star-min.svg" alt="">
+                            Рабочие заметки
+    
+                        </div>
+                        <div class="label__row">
+                            <input type="text">
+                        </div>
+                    </label>
+                    <div for="" class="label">
+                        <div class="label__name">
+                            <img src="img/Header/star-min.svg" alt="">
+                            Ответственный
+    
+                        </div>
+                        <div class="label__row">
+                            <div class="label__tags">
+                                <div class="tag">
+                                    <div class="tag__name">
+                                        Константин Константинопольский
+                                    </div>
+                                  
+                                </div>
+                                <div class="close">
+                                    <img src="img/Header/close-min.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="img/Header/plus.svg" alt="">
+                            </div>
+                            <div class="image">
+                                <img src="img/Header/lupe-min.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <label for="" class="label">
+                        <div class="label__name">
+                            Описание
+                        </div>
+                        <div class="label__row">
+                            <input type="text" placeholder="Новая">
+                        </div>
+                    </label>
+                    <label for="" class="label">
+                        <div class="label__name">
+                            Продукт
+                        </div>
+                        <div class="label__row">
+                            <input type="text" placeholder="">
+                            <div class="image">
+                                <img src="img/Header/lupe-min.svg" alt="">
+                            </div>
+                        </div>
+                    </label>
+                    <label for="" class="label">
+                        <div class="label__name">
+                            Приоритет
+                        </div>
+                        <div class="label__row">
+                            <input type="text" placeholder="Новая">
+                        </div>
+                    </label>
+                    <div for="" class="label">
+                        <div class="label__name">
+                            <img src="img/Header/star-min.svg" alt="">
+                            Группа
+    
+                        </div>
+                        <div class="label__row">
+                            <div class="label__tags">
+                                <div class="tag">
+                                    <div class="tag__name">
+                                        
+                                    Support Group
+                                    </div>
+                                </div>
+                                <div class="close">
+                                    <img src="img/Header/close-min.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="img/Header/plus.svg" alt="">
+                            </div>
+                            <div class="image">
+                                <img src="img/Header/lupe-min.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment">
+                <label for="" class="label">
+                    <div class="label__name">
+                        Согласующие
+    
+                    </div>
+                    <div class="label__row">
+                        <input type="text">
+                    </div>
+                </label>
+            </div>
+            <div class="concordants">
+                <div for="" class="label">
+                    <div class="label__name">
+                        <img src="img/Header/star-min.svg" alt="">
+                        Согласующие
+    
+                    </div>
+                    <div class="label__row">
+                        <div class="label__tags">
+                            <div class="tag">
+                              
+                                <div class="tag__name">
+                                    Андрей Пивоваров
+                                </div>
+                                <div class="tag__close">
+                                    <img src="img/Header/close.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="tag">
+                               
+                                <div class="tag__name">
+                                    Максим Галактионов
+                                </div>
+                                <div class="tag__close">
+                                    <img src="img/Header/close.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="tag">
+                                <div class="tag__name">
+                                    
+                                Алла Лин
+                                </div>
+                                <div class="tag__close">
+                                    <img src="img/Header/close.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="tag">
+                                <div class="tag__name">
+                                    
+                                Константин Константинопольский Константинович
+                                </div>
+                                <div class="tag__close">
+                                    <img src="img/Header/close.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="tag">
+                                <div class="tag__name">
+                                    
+                                Игорь Иванченко
+                                </div>
+                                <div class="tag__close">
+                                    <img src="img/Header/close.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="tag">
+                                <div class="tag__name">
+                                    
+                                Юлия Эйчаровна
+                                </div>
+                                <div class="tag__close">
+                                    <img src="img/Header/close.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="tag">
+                                <div class="tag__name">
+                                    Артём Подпрыгайко-Саппортов
+                                </div>
+                              
+                                <div class="tag__close">
+                                    <img src="img/Header/close.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="tag">
+                                <div class="tag__name">
+                                    
+                                Илья Вазнец
+                                </div>
+                                <div class="tag__close">
+                                    <img src="img/Header/close.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="tag">
+                                <div class="tag__name">   Михаил Вортенов</div>
+                                <div class="tag__close">
+                                    <img src="img/Header/close.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="tag">
+                                <div class="tag__name">
+                                    
+                                Наталья Нашевна
+                                </div>
+                                <div class="tag__close">
+                                    <img src="img/Header/close.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="tag">
+                                Евгения Итамовна
+                                <div class="tag__close">
+                                    <img src="img/Header/close.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="tag">
+                                <div class="tag__name">
+                                    
+                                Алиса Киральчук
+                                </div>
+                                <div class="tag__close">
+                                    <img src="img/Header/close.svg" alt="">
+                                </div>
+                            </div>
+                        
+                            <div class="close">
+                                <img src="img/Header/close-min.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="img/Header/plus.svg" alt="">
+                        </div>
+                        <div class="image">
+                            <img src="img/Header/lupe-min.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper__inputs">
+                <div class="column">
+                    <label for="" class="label">
+                        <div class="label__name">
+                            Когда открыто
+                        </div>
+                        <div class="label__row">
+                            <input type="text" placeholder="">
+                            <div class="image">
+                                <img src="img/Header/date.svg" alt="">
+                            </div>
+                        </div>
+                    </label>
+                    <div for="" class="label">
+                        <div class="label__name">
+                            Кем открыто
+    
+                        </div>
+                        <div class="label__row">
+                            <div class="label__tags">
+                                <div class="tag">
+                                    <div class="tag__name">
+                                        
+                                    Андрей Пивоваров
+                                    </div>
+                                </div>
+                                <div class="close">
+                                    <img src="img/Header/close-min.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="img/Header/plus.svg" alt="">
+                            </div>
+                            <div class="image">
+                                <img src="img/Header/lupe-min.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <label for="" class="label">
+                        <div class="label__name">
+                            Когда открыто
+                        </div>
+                        <div class="label__row">
+                            <input type="text" placeholder="22.10.2024">
+                            <div class="image">
+                                <img src="img/Header/date.svg" alt="">
+                            </div>
+                        </div>
+                    </label>
+                    <div for="" class="label">
+                        <div class="label__name">
+                            Кем создано
+                        </div>
+                        <div class="label__row">
+                            <div class="label__tags">
+                                <div class="tag">
+                                    <div class="tag__name">
+                                        Андрей Пивоваров
+                                    </div>
+                                 
+                                </div>
+                                <div class="close">
+                                    <img src="img/Header/close-min.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="img/Header/plus.svg" alt="">
+                            </div>
+                            <div class="image">
+                                <img src="img/Header/lupe-min.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
